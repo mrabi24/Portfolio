@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div class="header-wrapper">
+        <h3>*Download CV Button*</h3>
+        <nav>
+          <a href="#contact">
+            <button>Contact me</button>
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <div class="hero">
+      <div>
+        <img class="profile-img" src="./assets/profile.png" />
+      </div>
+      <h1>Hi, I'm Mohamed 👋</h1>
+      <p>Full Stack Developer</p>
+    </div>
+
+    <!-- ABOUT -->
+    <div class="about">
+      <div class="about-wrapper">
+        <div class="col">
+          <h2>About Me</h2>
+          <p>
+            I am a Full Stack Developer with a passion for building beautiful and
+            user-friendly websites. I have a strong understanding of both front-end
+            and back-end development, and I am excited to put my skills to use in a 
+            professional setting. I am a quick learner and a team player, and I am
+            confident that I can be a valuable asset to any web development team.
+            I also like reading mangas and playing video-games!
+          </p>
+        </div>
+        <div class="skills col">
+          <h2>My Skills</h2>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Bootstrap</li>
+            <li>Tailwind</li>
+            <li>Java</li>
+            <li>Spring Boot</li>
+            <li>PHP</li>
+            <li>C#</li>
+            <li>Python</li>
+            <li>MySQL</li>
+            <li>NPM</li>
+            <li>XAMPP</li>
+            <li>Postman</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJECTS -->
+    <div class="projects">
+      <div class="project-wrapper">
+        <h2>My Projects</h2>
+        <ul>
+          <li>
+            <a href="#" class="project-link" 
+            data-description="The goal of this project was to create a social media app
+             that allows the user to register/login, create posts and comment on their 
+             own or their friends posts" 
+            data-title="Social Media App" 
+            onclick="openModal('./assets/projects/social.png', 'Social Media App')">
+              <img src="./assets/projects/social.png" alt="Social Media App" />
+              <p>Social Media App</p>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="project-link" 
+            data-description="The goal of this project was to create a
+              fully functional app that allows the user login/register, fetch data from stocks they 
+              purchased and receive real-time P&L data updates on their personalized wallet" 
+            data-title="Stock Market Wallet" 
+            onclick="openModal('./assets/projects/stocks.png', 'Stock Market Wallet')">
+              <img src="./assets/projects/stocks.png" alt="Stock Market Wallet" />
+              <p>Stock Market Wallet</p>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="project-link" 
+            data-description="The goal of this project was to design a user-friendly website that 
+              allows users to track their nutrition and also reccommends workout exercices based 
+              on their fitness goals" 
+            data-title="Nutrition and Workout Tracker" 
+            onclick="openModal('./assets/projects/fitness.png', 'Nutrition and Workout Tracker')">
+              <img src="./assets/projects/fitness.png" alt="Nutrition and Workout Tracker" />
+              <p>Nutrition and Workout Tracker</p>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="project-link" 
+            data-description="This project is the one you're in now. It is a portfolio website that showcases my work." 
+            data-title="My Portfolio" 
+            onclick="openModal('./assets/projects/portfolio.png', 'This Portfolio')">
+              <img src="./assets/projects/portfolio.png" alt="This Portfolio" />
+              <p>This Portfolio</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- SOCIALS -->
+    <div class="socials" id="contact">
+      <div class="socials-wrapper">
+        <div>
+          <h2>Contact Me</h2>
+          <p>514-884-6077</p>
+          <p>rabiandaloussi.mohamed@gmail.com</p>
+          <p>Montreal, Canada</p>
+        </div>
+        <div class="social-icons">
+          <a href="https://github.com/mrabi24" target="_blank"><img src="./assets/github.svg" /></a>
+          <a href="https://www.linkedin.com/in/mohamed-rabi-andaloussi/" target="_blank"><img src="./assets/linkedin.svg" /></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODALS -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div>
+          <h2 id="modal-title"></h2>
+          <img id="modal-image" src="" alt="Project Image" />
+          <div id="modal-description" class="modal-description"></div>
+        </div>
+        <button class="toggle-button" onclick="toggleModalContent()">See More</button>
+      </div>
+    </div>
+
+    <script src="modal.js"></script>
+  </body>
+</html>
