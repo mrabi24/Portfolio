@@ -6,12 +6,13 @@ const closeModal = document.getElementsByClassName("close")[0];
 const projectLinks = document.getElementsByClassName("project-link");
 
 // Open the modal and set the image source and description
-function openModal(imageSrc, title) {
+function openModal(imageSrc, title, sourceCode) {
   modal.style.display = "block";
   modalImage.src = imageSrc;
   const description = event.currentTarget.dataset.description;
   modalDescription.textContent = description;
   document.getElementById("modal-title").textContent = title;
+  document.getElementById("modal-source-link").href = "https://github.com/mrabi24/" + sourceCode;
 }
 
 // Switch between displaying image and description
@@ -46,6 +47,7 @@ for (let i = 0; i < projectLinks.length; i++) {
     event.preventDefault();
     const imageSrc = this.querySelector("img").src;
     const description = this.querySelector("p").textContent;
-    openModal(imageSrc, description);
+    const sourceCode = this.querySelector("a").dataset.source;
+    openModal(imageSrc, description, sourceCode);
   });
 }

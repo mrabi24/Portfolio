@@ -80,8 +80,9 @@
             data-description="The goal of this project was to create a social media app
              that allows the user to register/login, create posts and comment on their 
              own or their friends posts" 
-            data-title="Social Media App" 
-            onclick="openModal('./assets/projects/social.png', 'Social Media App')">
+            data-title="Social Media App"
+            data-source="SocialMediaApp" 
+            onclick="openModal('./assets/projects/social.png', 'Social Media App', 'SocialMediaApp')">
               <img src="./assets/projects/social.png" alt="Social Media App" />
               <p>Social Media App</p>
             </a>
@@ -91,8 +92,9 @@
             data-description="The goal of this project was to create a
               fully functional app that allows the user login/register, fetch data from stocks they 
               purchased and receive real-time P&L data updates on their personalized wallet" 
-            data-title="Stock Market Wallet" 
-            onclick="openModal('./assets/projects/stocks.png', 'Stock Market Wallet')">
+            data-title="Stock Market Wallet"
+            data-source="StockTrackerApp" 
+            onclick="openModal('./assets/projects/stocks.png', 'Stock Market Wallet', 'StockTrackerApp')">
               <img src="./assets/projects/stocks.png" alt="Stock Market Wallet" />
               <p>Stock Market Wallet</p>
             </a>
@@ -102,8 +104,9 @@
             data-description="The goal of this project was to design a user-friendly website that 
               allows users to track their nutrition and also reccommends workout exercices based 
               on their fitness goals" 
-            data-title="Nutrition and Workout Tracker" 
-            onclick="openModal('./assets/projects/fitness.png', 'Nutrition and Workout Tracker')">
+            data-title="Nutrition and Workout Tracker"
+            data-source="FitnessApp" 
+            onclick="openModal('./assets/projects/fitness.png', 'Nutrition and Workout Tracker', 'FitnessApp')">
               <img src="./assets/projects/fitness.png" alt="Nutrition and Workout Tracker" />
               <p>Nutrition and Workout Tracker</p>
             </a>
@@ -111,8 +114,9 @@
           <li>
             <a href="#" class="project-link" 
             data-description="This project is the one you're in now. It is a portfolio website that showcases my work." 
-            data-title="My Portfolio" 
-            onclick="openModal('./assets/projects/portfolio.png', 'This Portfolio')">
+            data-title="My Portfolio"
+            data-source="Portfolio"  
+            onclick="openModal('./assets/projects/portfolio.png', 'This Portfolio', 'Portfolio')">
               <img src="./assets/projects/portfolio.png" alt="This Portfolio" />
               <p>This Portfolio</p>
             </a>
@@ -146,7 +150,11 @@
           <img id="modal-image" src="" alt="Project Image" />
           <div id="modal-description" class="modal-description"></div>
         </div>
-        <button class="toggle-button" onclick="toggleModalContent()">See More</button>
+        <div>
+          <button class="toggle-button" onclick="toggleModalContent()">See More</button>
+          <a id="modal-source-link" href="" target="_blank"><button class="link-button">Source Code</button></a>
+        </div>
+        
       </div>
     </div>
 
