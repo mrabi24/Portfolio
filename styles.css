@@ -30,6 +30,11 @@ button {
   border-radius: 5px;
   padding: 5px 12px;
   cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+  background: #6289ff;
 }
 
 /* HERO */
@@ -132,6 +137,20 @@ h2 {
   width: 300px;
   height: 200px;
   object-fit: scale-down;
+}
+
+.project-link {
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+}
+
+.project-link img {
+  transition: transform 0.3s ease;
+}
+
+.project-link:hover img {
+  transform: scale(1.3);
 }
 
 /* SOCIALS */
@@ -242,4 +261,21 @@ h2 {
 
 .show-image+.show-description {
   display: none;
+}
+
+.modal-content .toggle-button,
+.modal-content .link-button {
+  background-color: #1a53ff;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.modal-content .toggle-button:hover,
+.modal-content .link-button:hover {
+  background-color: #6289ff;
+  color: #ffffff;
 }
