@@ -35,6 +35,7 @@ button {
 
 button:hover {
   background: #6289ff;
+  color: #fff;
 }
 
 /* HERO */
@@ -53,7 +54,13 @@ button:hover {
 
 .hero h1 {
   font-size: 3rem;
+  font-weight: 300;
   max-width: 700px;
+}
+
+.hero b {
+  font-weight: 700;
+  color: #6289ff;
 }
 
 .hero p {
